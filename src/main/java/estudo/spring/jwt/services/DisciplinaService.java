@@ -5,6 +5,7 @@ import estudo.spring.jwt.repository.DisciplinaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DisciplinaService {
@@ -21,5 +22,8 @@ public class DisciplinaService {
 
     public List<Disciplina> recuperaDisciplinas() {
         return repository.findAll();
+    }
+    public Optional<Disciplina> recuperaDisciplina(Long id){
+        return repository.findById(id);
     }
 }
