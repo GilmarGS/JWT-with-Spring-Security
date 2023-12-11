@@ -1,4 +1,4 @@
-package estudo.spring.jwt.entitiy;
+package estudo.spring.jwt.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

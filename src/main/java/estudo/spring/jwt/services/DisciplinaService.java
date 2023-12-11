@@ -1,7 +1,7 @@
 package estudo.spring.jwt.services;
 
-import estudo.spring.jwt.entitiy.Disciplina;
-import estudo.spring.jwt.repository.DisciplinaRepository;
+import estudo.spring.jwt.entities.Disciplina;
+import estudo.spring.jwt.repositories.DisciplinaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

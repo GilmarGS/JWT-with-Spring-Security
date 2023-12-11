@@ -1,6 +1,6 @@
-package estudo.spring.jwt.repository;
+package estudo.spring.jwt.repositories;
 
-import estudo.spring.jwt.entitiy.Disciplina;
+import estudo.spring.jwt.entities.Disciplina;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

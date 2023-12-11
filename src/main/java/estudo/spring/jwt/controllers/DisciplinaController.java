@@ -1,6 +1,6 @@
 package estudo.spring.jwt.controllers;
 
-import estudo.spring.jwt.entitiy.Disciplina;
+import estudo.spring.jwt.entities.Disciplina;
 import estudo.spring.jwt.services.DisciplinaService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
