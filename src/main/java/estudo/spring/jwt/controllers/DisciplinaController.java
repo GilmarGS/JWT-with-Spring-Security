@@ -32,4 +32,11 @@ public class DisciplinaController {
         return disciplina.map(value -> new ResponseEntity<>(value, HttpStatus.OK)).
                 orElseGet(() -> new ResponseEntity<>(disciplina.get(), HttpStatus.NOT_FOUND));
     }
+    @DeleteMapping("/disciplina/{id}")
+    public ResponseEntity<Disciplina> deletaDisciplina(@PathVariable Long id){
+        Optional<Disciplina> disciplina = service.deletaDisciplina(id);
+    return disciplina.map(value -> new ResponseEntity<>(value, HttpStatus.OK)).
+            orElseGet(() -> new ResponseEntity<>(disciplina.get(), HttpStatus.NOT_FOUND));
+
+    }
 }

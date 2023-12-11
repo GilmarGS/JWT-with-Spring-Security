@@ -26,4 +26,11 @@ public class DisciplinaService {
     public Optional<Disciplina> recuperaDisciplina(Long id){
         return repository.findById(id);
     }
+
+    public Optional<Disciplina> deletaDisciplina(Long id) {
+        Optional<Disciplina> disciplinaDeletada = repository.findById(id);
+        repository.deleteById(id);
+
+        return disciplinaDeletada;
+    }
 }
